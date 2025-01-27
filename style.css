@@ -25,16 +25,38 @@ img {
     height: auto;
 }
 
+h2 {
+    font-size: 16px;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
 .logo {
+    margin-left: 200px;
+    margin-right: 200px;
     width: 300px;
 }
 
 .upper {
     display: flex;
+    justify-content: center;
+}
+
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+    gap: 20px;
 }
 
 .menu {
     display: flex;
+    justify-content: center;
+    font-size: 10px;
 }
 
 main {
@@ -44,21 +66,37 @@ main {
     padding-right: 150px;
 }
 
-.section_1 {
+.rusland {
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-rows: repeat(4, auto);
 }
 
-.left_1 {
+.rusland_left {
+    width: 130px;
     grid-column: 1 / 2;
-    grid-row: 3 / 5;
-    font-size: 10px;
+    grid-row: 2 / 4;
+    text-align: right;
+    font-size: 8px;
 }
 
-.right_1 {
+.rusland_photo {
+    margin-top: 5px;
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    gap: 5px;
+}
+
+.rusland_right {
     grid-column: 2 / 3;
     grid-row: 1 / 5;
+}
+
+.rusland_info {
+    display: flex;
+    gap: 5px;
+    font-size: 10px;
 }
 
 h1 {
@@ -67,11 +105,232 @@ h1 {
     font-size: 30px;
 }
 
-.right_1_info {
+.rusland_grey {
+    margin-bottom: 15px;
+    color: grey;
+}
+
+/* Udland */
+
+.udland {
+    display: flex;
+    gap: 50px;
+}
+
+.udland_left {
+    width: 20%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(6, auto);
+    gap: 5px;
     font-size: 10px;
 }
 
-.right_1_p {
-    margin-bottom: 10px;
-    color: grey;
+.udland_h2 {
+    margin-bottom: 15px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.udland_hr_1 {
+    margin-top: 0px;
+    height: 1px;
+    grid-column: 1 / 4;
+    grid-row: 2;
+}
+
+.udland_img {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+
+.udland_name_1 {
+    margin-top: 10px;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+.udland_email_1 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    display: flex;
+    gap: 5px;
+}
+
+.udland_twitter {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    display: flex;
+    gap: 5px;
+}
+
+.udland_name_2 {
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+}
+
+.udland_email_2 {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+    display: flex;
+    gap: 5px;
+}
+
+.udland_info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+.udland_right {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+.udland_p {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.udland_abonnement {
+    margin-top: 30px;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    text-align: center;
+}
+
+.abonnement_btn {
+    background-color: grey;
+}
+
+.udland_login {
+    margin: 0 auto;
+    display: flex;
+    gap: 5px;
+}
+
+.udland_some {
+    display: flex;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-content: end;
+    gap: 5px;
+}
+
+.udland_some p {
+    width: 75px;
+    height: 35px;
+    text-align: center;
+    background-color: grey;
+}
+
+/* Fik du læst? */
+
+.shown {
+    display: flex;
+    gap: 20px;
+}
+
+.fdl_space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fdl_h2 {
+    display: flex;
+}
+
+.arrows {
+
+}
+
+.fdl_img {
+    width: 200px;
+}
+
+.fdl_h3 {
+    width: 150px;
+    font-size: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Seneste nyt */
+
+.seneste_nyt {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+.sn_h2 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.sn_information {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    align-content: end;
+}
+
+
+
+.forsiden_lige_nu {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.forsiden_lige_nu_div {
+    width: 150px;
+}
+
+.forsiden_lige_nu_h2 {
+    grid-template-columns: 1 / 2;
+    grid-template-rows: 1 / 2;
+}
+
+.forsiden_lige_nu_row_1 {
+    grid-row: 2 / 3;
+}
+
+.forsiden_lige_nu_row_2 {
+    grid-row: 3 / 4;
+}
+
+
+.seneste_nyt_p {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+article {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.anbefalinger {
+    display: flex;
+}
+
+.footer_flex {
+    display: flex;
+}
+
+.footer_flex img {
+    width: 50px;
+}
+
+.anbefalinger_flex {
+    display: flex;
 }
